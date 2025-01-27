@@ -1,0 +1,35 @@
+{
+	"MEC": {
+		"PIL_ECommerce_API_KEY": "yaTmSAVqDR4GNwijaJie3aEa3ivy7Czu22BxZwKP"
+	},
+	"appinfra": {
+		"appidentity.micrositeId": "15085",
+		"appidentity.sector": "b2c",
+		"appidentity.appState": "TEST",
+		"appidentity.serviceDiscoveryEnvironment": "Production",
+		"abtest.precache":["ReceiveMarketingOptIn"],
+		"servicediscovery.platformMicrositeId": "70000",
+		"servicediscovery.platformEnvironment": "Production",
+		"servicediscovery.propositionEnabled":true,
+		"logging.releaseConfig":{
+			"fileName":"AppInfraLog",
+			"numberOfFiles":5,
+			"fileSizeInBytes":50000,
+			"logLevel":"Warn",
+			"fileLogEnabled":false,
+			"consoleLogEnabled":false,
+			"componentLevelLogEnabled":false,
+			"componentIds": ["ail"]
+		},
+		"logging.debugConfig":{
+			"fileName":"AppInfraLog",
+			"numberOfFiles":5,
+			"fileSizeInBytes":50000,
+			"logLevel":"all",
+			"fileLogEnabled":false,
+			"consoleLogEnabled":false,
+			"componentLevelLogEnabled":false,
+			"componentIds": ["ail"]
+		}
+	}
+}
