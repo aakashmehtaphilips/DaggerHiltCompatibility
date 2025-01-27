@@ -26,13 +26,9 @@ import com.philips.platform.appinfra.AppInfra
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @Inject
     lateinit var greetingMessage: String
-
-    @Inject
-    lateinit var appInfra: AppInfra
 
     override fun onCreate(savedInstanceState: Bundle?) {
         (application as DHCApp).appComponent.inject(this)
@@ -47,7 +43,7 @@ class MainActivity : ComponentActivity() {
                     ) {
 
                         val config = Configuration(
-                            appInfra,
+                            AppInfra.Builder().build(this),
                             "prasad.devadiga@philips.com",
                             externalLinks = ExternalLinks(
                                 noSubscription = ExternalLink(""),

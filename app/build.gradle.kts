@@ -61,9 +61,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.dagger)
-    ksp(libs.dagger.compiler)
+    kapt(libs.dagger.compiler)
     implementation(libs.hilt.navigation.compose)
     implementation(libs.hilt)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
     implementation("com.philips.phdsi:native-subscription:1.3.1")
 }
